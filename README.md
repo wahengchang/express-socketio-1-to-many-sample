@@ -13,7 +13,7 @@ $ git clone https://github.com/wahengchang/express-socketio-1-to-many-sample.git
 
 ### Install the dependencies:
 
-``````
+```
 $ yarn init
 // or npm install
 ```
