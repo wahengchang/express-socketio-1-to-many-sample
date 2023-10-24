@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.IO Example</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('message', (data) => {
+      console.log('Received message:', data);
+      const messageElement = document.createElement('p');
+      messageElement.textContent = data;
+      document.body.appendChild(messageElement);
+    });
+  </script>
+</head>
+<body>
+  <h1>Socket.IO Example</h1>
+</body>
+</html>
